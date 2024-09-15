@@ -1,0 +1,30 @@
+.container
+{
+    width:80%;
+    min-height: 100vh;
+    margin-left: 10%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem 1.8rem;
+    gap:1rem;
+
+}
+.container>h1
+{
+    font-size: 4rem;
+    color: orange;
+    width:100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+@media (max-width:950px)
+{
+    .container
+    {
+        width:100%;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,197 @@
+.container
+{
+    width: 80%;
+    margin-left:10%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    padding: 2rem 1.5rem;
+}
+.container>h1
+{
+    color: orange;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.loading
+{
+    width:100%;
+    margin-top:3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.offerContainer
+{
+    width:100%;
+    position: relative;
+}
+
+
+
+.delete
+{
+
+    width:5rem;
+    height: 5rem;
+    background: none;
+    position: absolute;
+    top:.2rem;
+   border-top-right-radius: 20%;
+   padding: .5rem;
+    right: .2rem;
+    cursor: pointer;
+    z-index: 2;
+}
+.delete:hover
+{
+  
+    color: red;
+}
+.roger
+{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+.confirm
+{
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border:.5rem solid orange;
+    border-radius: 2.5rem;
+}
+.confirm>h1
+{
+    width:100%;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 1rem 0 3rem;
+    text-align: center;
+}
+.confirm>button
+{
+    width:35%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border:.4rem solid black;
+    padding: 1rem 0;;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.yes
+{
+    background: rgb(246, 72, 72);
+}
+.yes:hover
+{
+    transform: scale(1.03);
+    background: red;
+
+}
+.cancel
+{
+    background: green;
+}
+.cancel:hover
+{
+    transform: scale(1.03);
+    background: rgb(0, 186, 0);
+
+}
+.deleting
+{
+
+    position: fixed;
+    z-index: 12;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deleting>div
+{
+    
+    font-size: 2rem;
+    color: black;
+    padding: 4rem;
+    display: flex;
+    gap:2rem;
+    flex-direction: column;
+    align-items: center;
+    border:.6rem solid orange;
+    border-radius: 3rem;
+    background-color: white;
+}
+.promotion
+{
+
+    position: absolute;
+    right: .5rem;
+    padding-right: .3rem;
+    top:50%;
+    translate: 0 -30%;
+    font-size: 2rem;
+    font-weight: 700;
+    background:none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+}
+.promotion:hover
+{
+  
+    color: red;
+}
+
+@media (max-width:950px)
+{
+    .container
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+    .promotion
+    {
+        font-size: 1.2rem;
+    }
+    .promotion
+    {
+        bottom: 6.5rem;
+        font-size: 2rem;
+        top:auto;
+    }
+    .delete
+    {
+        top:2rem;
+        right: 1rem;
+        width:4rem;
+        height: 4rem;
+    }
+}

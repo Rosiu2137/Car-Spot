@@ -1,0 +1,56 @@
+.container
+{
+    width: 100%;
+    color: black;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.8rem;
+}
+.item
+{
+    font-weight: 700;
+    font-size: 2rem;
+    width:4.1rem;
+    height: 4.1rem;
+ 
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.disabled
+{
+    cursor: default;
+}
+.itemNext
+{
+    font-weight: 700;
+    margin:0 .8rem;
+    width:2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    color:grey;
+ 
+}
+.rotated
+{
+    transform: rotate(180deg);
+}
+@media (max-width:950px) {
+    .itemNext
+    {
+        scale: 2;
+        margin:0 2rem;
+    }
+    .item
+    {
+        width:6rem;
+        height: 6rem;
+        margin: 0 .5rem;;
+    }
+}
+
+

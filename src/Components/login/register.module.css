@@ -1,0 +1,390 @@
+.container
+{
+    width:90%;
+    margin-left:5%;
+    background-color: white;
+    padding-bottom: 2rem;
+    border:.3rem solid grey;
+    border-top: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+   
+   
+
+}
+.container>h1
+{
+    width:100%;
+    
+    color: orange;
+    font-size: 4rem;
+    text-align: center;
+    padding: 1rem .5rem 1rem .5rem;
+}
+.formDiv
+{
+    width:100%;
+    display: flex;
+}
+.leftDiv
+{
+    width:50%;
+    
+   
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap:2rem;
+}
+.leftDiv>label>h2
+{
+    font-size: 1.3rem;
+   
+    
+}
+
+label
+{
+    position: relative;
+}
+.input
+{
+    
+    width:100%;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: .3rem .7rem;
+    background: none;
+    border:0;
+    border-bottom: .3rem solid rgb(127,127,127);
+    transition: all .3s ease;
+}
+.eye
+{
+   
+    position: absolute;
+    bottom: .5rem;
+    right:.3rem;
+    cursor: pointer;
+    width:2.5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pass
+{
+    padding-right: 3rem;
+}
+.input:focus
+{
+    border-bottom: .3rem solid orange;
+}
+.rightDiv
+{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap:2rem;
+   
+}
+.rightDiv>label>h2
+{
+    font-size: 1.3rem;
+    display: flex;
+    gap:.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+.selectContainer>h2
+{
+    font-size: 1.3rem;
+    display: flex;
+    gap:.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+.infoContainer
+{
+    width:1.6rem;
+    height: 1.6rem;
+    background: url('../../assets/img/info.png');
+    background-size: contain;
+}
+
+.info
+{
+    position: absolute;
+    z-index:9;
+    opacity: 0;
+    display: none;
+    translate: -50% 8%;
+    transition: all .3s ease;
+    background-color: rgb(206, 206, 206);
+    font-size: 1rem;
+    max-width: 20rem;
+    padding: .3rem .5rem;
+    border:.3rem solid black;
+    border-radius: 1rem;
+
+}
+.select
+{
+    font-size: 1.2rem;
+    padding: .2rem .7rem;
+    outline: none;
+    color: black;
+    background: none;
+    border:.25rem solid rgb(127, 127, 127);
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top:.4rem;
+    transition: all .3s ease;
+}
+.select:focus
+{
+    border: .25rem solid orange;
+}
+.bottomDiv
+{
+    width: 100%;
+   
+    margin-top: 1rem;
+    display: flex;
+}
+.rules
+{
+    width:50%;
+   
+
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+.rules>div
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:.4rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.create
+{
+    width:50%;
+
+    padding: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.create>button
+{
+    width: 100%;
+    font-size: 3rem;
+    color:black;
+    padding: .7rem;
+    background-color: orange;
+    border:.4rem solid black;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+.errorArea
+{
+    width: 100%;
+    color:red;
+    padding-left: .4rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    position: absolute;
+    top:4.7rem;
+    
+}
+.errorArea2
+{
+    width: 100%;
+    color:red;
+    padding-left: .4rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    
+    
+}
+.loadingContainer
+{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(70, 70, 70, 0.6);
+    z-index:100;
+    backdrop-filter: blur(20px);
+}
+.innerLoadingContainer
+{
+    position: fixed;
+    top:50%;
+    left:50%;
+    translate: -50% -50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    padding: 3.5rem;
+    border-radius: 3rem;
+    border:.3rem solid orange;
+}
+.loadingDescription
+{
+    font-size: 3rem;
+    color:orange;
+    font-weight: 700;
+}
+.serverErrorArea
+{
+    width:100%;
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+@media (max-width:950px)
+{
+    .formDiv
+    {
+        flex-direction: column;
+    }
+    .container>h1
+    {
+        font-size: 6rem;
+    }
+    .container
+    {
+        width:100%;
+        margin-left:0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius:0;
+        border: 0;
+    }
+    .leftDiv
+    {
+        width:100%;
+        padding: 1rem 3rem;
+    }
+    .rightDiv
+    {
+        width: 100%;
+        padding: 1rem 3rem;
+    }
+    .rightDiv>label>h2
+    {
+        font-size: 3rem;
+    }
+    .leftDiv>label>h2
+    {
+        font-size: 3rem;
+    }
+    .input
+    {
+        font-size: 3rem;
+        border-bottom: .6rem solid rgb(127,127,127);
+        border-radius: 0;
+    }
+    label
+    {
+        margin:.5rem 0;
+    }
+    .leftDiv>label>h2
+    {
+        margin: 1rem 0;
+    }
+    .rightDiv>label>h2
+    {
+        margin: 1rem 0;
+    }
+    .input:focus
+    {
+        border-bottom: .6rem solid orange;
+    }
+    .eye
+    {
+        transform: scale(2);
+        top:7.5rem;
+        right:1rem;
+    }
+    .pass
+    {
+        padding-right: 4.5rem;
+    }
+    .infoContainer
+    {
+        width:3rem;
+        height: 3rem;
+    }
+    .info
+    {
+        font-size: 2rem;
+        max-width:30rem;
+    }
+    .select
+    {
+        font-size: 2.5rem;
+        border:.4rem solid rgb(127, 127, 127);
+    }
+    .select:focus
+    {
+        border:.4rem solid orange;
+    }
+    .selectContainer>h2
+    {
+        font-size: 3rem;
+    }
+    .errorArea
+    {
+        font-size: 1.8rem;
+        top:11.5rem;
+    }
+    
+    .serverErrorArea
+    {
+        font-size: 3rem;
+    }
+    .bottomDiv
+    {
+        flex-direction: column;
+    }
+    .rules
+    {
+        width:100%;
+
+    }
+    .create
+    {
+        width:100%;
+    }
+    .rules>div
+    {
+        font-size: 2.5rem;
+        padding: .3rem 1rem;
+        gap:1rem;
+     
+    }
+    .rules>div>:first-child
+    {
+        transform: scale(2);
+    }
+    .create>button
+    {
+        margin:1.5rem 0;
+    }
+}

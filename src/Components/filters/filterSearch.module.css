@@ -1,0 +1,403 @@
+.container
+{
+  
+    height:max-content;
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem 0px;
+    border-bottom-left-radius: 2rem;
+    margin-bottom: 3rem;
+    
+}
+.content
+{
+    width:100%;
+    height: 100%;
+
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.header
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+   
+    position: relative;
+}
+.header>div
+{
+    position: absolute;
+    top:50%;
+    left:.3rem;
+    translate: 0 -50%;
+    width:3.5rem;
+    height: 3.5rem;
+   
+    rotate: 180deg;
+    cursor: pointer;
+}
+.header>h1
+{
+    width:100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+   
+    color: orange;
+}
+.lineBreak
+{
+    
+    width: .35rem;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(126, 126, 126);
+}
+
+.priceHeader
+{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: .2rem;
+}
+.priceHeaderContent
+{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 .6rem;
+    
+}
+.line
+{
+    width:100%;
+    background-color: rgb(126, 126, 126);
+    height: .18rem;
+    
+}
+.price
+{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  
+}
+.price2
+{
+    margin-bottom: 0;
+    padding-top:.6rem
+}
+.input
+{
+    cursor: pointer;
+    width:43%;
+    margin-bottom: .7rem;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: .3rem .2rem;
+    border:.2rem solid rgb(126,126,126);
+    border-radius: .5rem;
+    outline: none;
+}
+.input:focus
+{
+    border:.2rem solid orange;
+}
+.input::-webkit-inner-spin-button
+{
+    display: none;
+}
+.minus
+{
+    color: rgb(126,126,126);
+    font-size: 1.8rem;
+    font-weight: 700;
+    
+    margin-bottom: .7rem;
+}
+.horizontalBreak
+{
+    width:100%;
+    height: .18rem;
+    background-color: grey;
+}
+.item
+{
+    
+    display: flex;
+    align-items: center;
+    gap:.3rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    padding-left: .4rem;
+    cursor: pointer;
+    
+}
+.svgContainer
+{
+    width:2rem;
+    height: 2rem;
+   
+    rotate: 90deg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+}
+.item:hover
+{
+    background-color: rgb(217, 217, 217);
+}
+.optionsLineBreak
+{
+    width:100%;
+    height: .1rem;
+    background-color: grey;
+    border-radius: 10px;
+}
+.optionsLineBreak2
+{
+ 
+    width:100%;
+    height: .15rem;
+    background-color: grey;
+    border-radius: 10px;
+}
+.rotated
+{
+    transition: all .7s ease;
+    transform: rotate(-180deg);
+}
+.menuContainer
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:0.3rem;
+   
+    
+}
+.brandMenuContainer
+{
+    max-height: 20rem;
+    overflow: scroll;
+    
+}
+.brandMenuContainer::-webkit-scrollbar
+{
+    cursor: pointer;
+    width:.6rem;
+    height: 0px;
+}
+.brandMenuContainer::-webkit-scrollbar-thumb:hover
+{
+    background-color: orange;
+   
+}
+.brandMenuContainer::-webkit-scrollbar-track
+{
+    background-color: rgb(230, 230, 230);
+}
+.option
+{
+    padding: .2rem 0;
+    padding-left: .8rem;
+    width:100%;
+    display: flex;
+    gap:.4rem;
+    font-size: 1.3rem;
+    align-items: center;
+    cursor: pointer;
+}
+.checkBoxDiv
+{
+    width:1.5rem;
+    height: 1.5rem;
+    background-color:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+}
+.checkBoxDivColor
+{
+    background-color: orange;
+}
+.cityInput
+{
+    width:90%;
+    margin-left: 5%;
+   margin-top:.5rem;
+   margin-bottom: .2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: .3rem .4rem;
+    border:.2rem solid rgb(126,126,126);
+    border-radius: .5rem;
+    outline: none;
+    cursor: pointer;
+}
+.saveBtn
+{
+    width:100%;
+    font-size: 1.7rem;
+    color:white;
+    background-color: rgb(135, 135, 135);
+    border:.23rem solid black;
+    border-radius: .7rem;
+    margin:1.4rem 0 .4rem 0;
+    padding: .2rem .4rem;
+}
+.btnEnabled
+{
+    background-color: orange;
+    cursor: pointer;
+}
+.btnEnabled:hover
+{
+    background-color: rgb(234, 152, 0);
+}
+.cityInput:focus
+{
+    border:.2rem solid orange;
+}
+.deleteBtn
+{
+    width:100%;
+    font-size: 1.3rem;
+    margin-top:.5rem;
+    border:.25rem solid black;
+    border-radius: .5rem;
+    display: flex;
+    color:white;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.deleteBtn:hover
+{
+    background-color: rgb(254, 61, 61);
+}
+@media(min-width:950px)
+{
+    .container
+    {
+        width:20rem;
+    }
+    .header>div
+    {
+        display: none;
+    }
+}
+@media(max-width:950px)
+{
+    .container
+    {
+        width:90%;
+        max-height: 80vh;
+        border-radius: 2rem;
+        border: .5rem solid orange;
+        padding: 2rem .5rem 2.5rem .5rem;
+        overflow: scroll;
+        box-shadow: 0 0 3rem 1rem rgba(178, 178, 178, 0.8);
+        
+    }
+    .container::-webkit-scrollbar
+    {
+        width:0px;
+        height: 0px;
+    }
+    .header>h1
+    {
+        font-size: 3.5rem;
+    }
+    .header>div
+    {
+        display: block;
+    }
+    .line
+    {
+        height: .25rem;
+        
+    }
+    .priceHeaderContent
+    {
+        font-size: 1.5rem;
+    }
+    .priceHeader
+    {
+        margin-bottom: .5rem;
+    }
+    .optionsLineBreak
+    {
+        height: .2rem;
+    }
+    .input
+    {
+        padding-left: .7rem;
+        font-size: 1.5rem;
+        border: .3rem solid rgb(126,126,126);
+    }
+    .input:focus
+    {
+        border: .3rem solid orange;
+    }
+    .horizontalBreak
+    {
+        margin-top: .5rem;
+        height: .23rem;
+    }
+    .svgContainer
+    {
+        width:3rem;
+        height: 3rem;
+    }
+    .option
+    {
+        font-size: 2rem;
+        padding-left: 2.5rem;
+    }
+    .cityInput
+    {
+        font-size: 2rem;
+        border:.3rem solid rgb(126,126,126);
+        margin-top: .8rem;
+        margin-bottom: .8rem;
+        padding-left: .8rem;
+    }
+    .saveBtn
+    {
+        font-size: 2.5rem;
+        padding: .5rem 0;
+        border:.35rem solid black;
+        margin-top:3rem;
+        margin-bottom:1rem;
+    }
+    .cityInput:focus
+    {
+        border:.3rem solid orange;
+    }
+    .item
+    {
+
+        font-size: 2.3rem;
+        padding-left: 1.5rem;
+    }
+    .deleteBtn
+    {
+        font-size: 2rem;
+    }
+    
+}

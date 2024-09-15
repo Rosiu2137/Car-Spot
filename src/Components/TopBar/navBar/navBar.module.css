@@ -1,0 +1,326 @@
+.navbar
+{
+    position: sticky;
+    top:0px;
+    width:100%;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 3px solid rgb(114, 114, 114);
+    border-top: 3px solid rgb(114, 114, 114);
+    z-index: 10;
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    justify-content: center;
+  
+}
+.logo:hover
+{
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+.icon1
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon1>img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.icon2>img
+{
+    height: 100%;
+}
+.menuOption
+{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s ease;
+    text-align: center;
+}
+.menuOption:hover
+{
+    color: rgb(229, 149, 0);
+}
+.rightMenu
+{
+  
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+}
+.logged
+{
+   height: 3rem;
+   width: 3rem;
+  
+    border: .25rem solid black;
+    border-radius: 50%;
+    
+    position: relative;
+}
+.logged:hover >.arrow
+{
+    display: block;
+}
+.logged:hover >.list
+{
+    display: flex;
+}
+.imgContainer
+{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.imgContainer>img
+{
+    max-width:100%;
+    max-height: 100%;
+    scale: 1.2;
+}
+.arrow
+{
+    width:2rem;
+    height: 1rem;
+    background:url('../../../assets/img/arrow0000.png');
+    background-size: contain;
+    position: absolute;
+    right:0.3rem;
+    top:2.8rem;
+    display: none;
+
+}
+.list
+{
+    position: absolute;
+    top:3.8rem;
+    right: -0.5rem;
+   display: none;
+   
+   min-width: 20rem;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem .8rem;
+    background-color: rgb(255, 255, 255);
+    border:.3rem solid rgb(0, 0, 0);
+    border-radius: .8rem;
+}
+.listOption
+{
+    width:100%;
+    font-size: 1.6rem;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0;
+    cursor: pointer;
+    gap:.4rem;
+    text-decoration: none;
+}
+.listOption:hover
+{
+    color:red;
+}
+.list>h2
+{
+    font-size: 2.4rem;
+    text-align: center;
+    width:100%;
+    
+    
+    color: orange;
+    font-weight: 700;
+}
+.list>img
+{
+    max-width:5rem;
+    max-height: 5rem;
+    border-radius: 10px;
+    border:.2rem solid black;
+    padding: .15rem;
+    
+}
+.line
+{
+    width:100%;
+    height: .15rem;
+    background-color: grey;
+    border-radius: 10px;
+    margin:.3rem 0;
+}
+.listBtn
+{
+    width:100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: .3rem 0;
+    background-color: rgb(207, 207, 207);
+    border:.2rem solid black;
+    border-radius: .8rem;
+    margin-top: .3rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:.3rem;
+}
+.listBtn:hover
+{
+    background-color: rgb(203, 0, 0);
+    color:white;
+}
+.svgPerson
+{
+    width:5rem;
+    height: 5rem;
+    fill: black;
+}
+@media(min-width:4000px)
+{
+    .logo
+    {
+        scale: 1.5;
+        translate: 15%;
+    }
+}
+@media(min-width:6000px)
+{
+    .logo
+    {
+        scale: 2;
+        translate: 40%;
+    }
+}
+@media(min-width:8000px)
+{
+    .logo
+    {
+        scale: 3;
+        translate: 80%;
+    }
+}
+@media(max-width:400px)
+{
+    .menuOption
+    {
+        font-size: 3.4rem;
+    }
+}
+@media(min-width:401px)
+{
+    .menuOption
+    {
+        font-size: 2rem;
+    }
+}
+@media(max-width:950px)
+{
+    .logo:hover
+    {
+        opacity: 1;
+        transform: none;
+    }
+    .navbar
+    {
+        padding: 0.5rem 1.1rem;
+        min-height: 60px;
+    }
+    .icon1
+    {
+        width:7rem;
+        height: 7rem;
+        min-width: 25px;
+        min-height: 25px;
+    }
+    .icon2
+    {
+        height: 10rem;
+     
+    }
+    .logged
+    {
+        width:5rem;
+        height: 5rem;
+        border:.4rem solid black;
+    }
+    .arrow
+    {
+        top:4.7rem;
+        right:1rem;
+    }
+    .list
+    {
+        top:5.6rem;
+        min-width: 27rem;
+    }
+    .list>h2
+    {
+        font-size: 3rem;
+    }
+    .list>img
+    {
+        width:5rem;
+        height: 5rem;
+    }
+    .listOption
+    {
+        font-size: 2rem;
+    }
+    .listBtn
+    {
+        font-size: 2rem;
+    }
+    .rightMenu
+    {
+        gap:1rem;
+    }
+    
+}
+@media(min-width:951px)
+{
+    .navbar
+    {
+        padding: 0.2rem 1.1rem;
+    }
+    .icon1
+    {
+        width:50px;
+        height: 50px;
+    }
+    .icon2
+    {
+        height: 80px;
+    }
+    .menuOption
+    {
+        font-size: 1.5rem;
+    }
+}

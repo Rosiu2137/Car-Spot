@@ -1,0 +1,911 @@
+.container
+{
+    width:90%;
+    margin-left: 5%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+.container>h2
+{
+    width:100%;
+    color:orange;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.4rem 0;
+}
+.titlePlace
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.titlePlace>h2
+{
+    font-size: 2.5rem;
+    color: black;
+    padding: 1rem 0;
+ 
+ 
+    
+}
+.title
+{
+    width:94%;
+    margin-left: 3%;
+   
+    outline: none;
+    font-size: 1.5rem;
+    padding: .5rem .9rem;
+    border:.3rem solid rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.title:focus
+{
+    border:.3rem solid orange
+}
+.car
+{
+    margin-top:4rem;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    padding: 0 1.5rem;
+}
+.car>h1
+{
+    width:100%;
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    font-weight: 700;
+  
+}
+.line
+{
+    width: 100%;
+    height: .3rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: grey;
+}
+.car>h2
+{
+    width:100%;
+    font-size: 1.5rem;
+    margin-top:3rem;
+    margin-bottom: .5rem;
+}
+.selectBrand
+{
+    width:100%;
+    font-size: 1.4rem;
+    caret-color: white;
+    padding: .2rem .5rem;
+    border:.3rem solid black;
+    border-radius: 1rem;
+   cursor: pointer;
+   outline: none;
+   max-height: 10rem;
+  
+   appearance: none;
+}
+.selectLabel
+{
+    position: relative;
+    
+    margin-left: 2%;
+    width:45%;
+}
+.list
+{
+    position: absolute;
+    top:100%;
+    left:0;
+    right: 0;
+    background-color: white;
+    max-height: 15rem;
+    overflow: scroll;
+    display: none;
+    font-size: 1.5rem;
+
+    border:.3rem solid orange;
+    border-radius: 1rem;
+}
+.list>ul>li
+{
+    padding: .3rem 1rem;;
+    cursor: pointer;
+}
+.list>ul>li:hover
+{
+    background-color: rgb(219, 219, 219);
+}
+.list::-webkit-scrollbar
+{
+
+    display: none;
+}
+.list>ul
+{
+    list-style-type: none;
+}
+.arrow
+{
+    position: absolute;
+    top:50%;
+    translate: 0 -50%;
+    right:.8rem;
+    width:2rem;
+    height: 2rem;
+
+
+    rotate: 90deg;
+}
+.arrow2
+{
+    position: absolute;
+    top:50%;
+    translate: 0 -50%;
+    right:2.5rem;
+    width:2rem;
+    height: 2rem;
+
+
+    rotate: 90deg;
+}
+.selectBrand:focus
+{
+    border:.3rem solid orange;
+}
+.carModel
+{
+    width:45%;
+    font-size: 1.4rem;
+    margin-left: 2%;
+    padding: .4rem .7rem;
+    border:.3rem solid black;
+    border-radius: 1rem;
+   cursor: pointer;
+   outline: none;
+}
+.carModel:focus
+{
+    border:.3rem solid orange;
+}
+.specification
+{
+    width:100%;
+
+    display: grid;
+    gap:3rem;
+    padding: 0rem 2rem;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+
+
+}
+.specification>h2
+{
+    width:100%;
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    font-weight: 700;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.inputCon
+{
+    width:100%;
+
+    display: flex;
+    flex-direction: column;
+
+   
+}
+.inputCon>h2
+{
+    width:100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+
+}
+.specificationInput
+{
+    width:90%;
+    margin-left: 5%;
+    font-size: 1.3rem;
+    outline: none;
+    padding: .3rem .6rem;
+    border:.3rem solid black;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+.specificationInput::-webkit-inner-spin-button
+{
+    display: none;
+}
+.capacity
+{
+    width:90%;
+    margin-left: 5%;
+    font-size: 1.3rem;
+    outline: none;
+    padding: .3rem .6rem;
+    border:.3rem solid black;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+.capacity:focus
+{
+    border:.3rem solid orange;
+}
+.capacityCon
+{
+    width:100%;
+    position: relative;
+}
+.capacityCon>input
+{
+    padding-right: 3.5rem;
+}
+.capacityCon>input::-webkit-inner-spin-button
+{
+    display: none;
+}
+.cm
+{
+    position: absolute;
+    right:2.5rem;
+    top:.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.specificationInput:focus
+{
+    border:.3rem solid orange;
+}
+.selectEngine
+{
+    width:90%;
+    margin-left: 5%;
+    font-size: 1.4rem;
+    padding: .2rem .5rem;
+    border:.3rem solid black;
+    border-radius: 1rem;
+   cursor: pointer;
+   outline: none;
+    appearance: none;
+
+}
+.engineLabel
+{
+    position: relative;
+}
+.selectEngine:focus
+{
+    border:.3rem solid orange;
+}
+.description
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.description>h2
+{
+    text-align: center;
+    width:100%;
+    color:black;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.textArea
+{
+    margin-top:2rem;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border:.3rem solid black;
+    border-radius: 1rem;
+    outline: none;
+    min-height: 10rem;
+    resize: vertical;
+  
+}
+.textArea::-webkit-scrollbar
+{
+    background: white;
+   border-top-right-radius: 20px;
+    cursor: pointer;
+}
+.textArea::-webkit-resizer
+{
+    background-color: rgb(150, 150, 150);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+   border-bottom-right-radius: 70%;
+    border-top-left-radius: 50%;
+}
+.textArea:focus
+{
+    cursor: text;
+    border:.3rem solid orange;
+}
+.price
+{
+    width:100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.price>h2
+{
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    letter-spacing: .2rem;
+}
+.priceCon
+{
+    width:45%;
+    height: 100%;
+    position: relative;
+}
+.priceCon>input
+{
+    width:100%;
+    font-weight: 700;
+    outline: none;
+    font-size: 2rem;
+    color: black;
+    padding: .5rem .8rem;
+    border:.3rem solid black;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    padding-right: 3rem;
+}
+.priceCon>input:focus
+{
+    border:.3rem solid orange;
+}
+.currency
+{
+    position: absolute;
+    right: 1rem;
+    top:50%;
+    translate: 0 -50%;
+   
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.priceCon>input::-webkit-inner-spin-button
+{
+    display: none;
+}
+.photo
+{
+    width:100%;
+   position: relative;
+    display: flex;
+    gap:1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 2rem;
+    padding-bottom: 3rem;
+    align-items: center;
+}
+.imgContainer
+{
+    max-width:12rem;
+    max-height: 12rem;
+    overflow: hidden;
+}
+.imgContainer>img
+{
+    width:100%;
+    height: 100%;
+}
+.imgContainer>img::selection
+{
+    background: none;
+}
+.addPhoto
+{
+    width:8rem;
+    height: 8rem;
+    border:.25rem solid grey;
+    border-radius: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: grey;
+    transition: all .3s ease-in;
+    position: relative;
+}
+.addPhoto>input
+{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.addPhoto:hover
+{
+    border:.25rem solid orange;
+    color: orange;
+}
+.photo>h2
+{
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.rules
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:.7rem;
+ 
+    
+    
+    margin:.7rem 0;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+.rules>div
+{
+   width:100%;
+    display: flex;
+    gap:.7rem;
+    font-size: 1.8rem;
+    
+    align-items: center;
+}
+.rules::selection
+{
+    background: none;
+}
+.rules2
+{
+    width:100%;
+    display: flex;
+    gap:1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    align-items: center;
+    margin:.7rem 0;
+    padding: 0 2rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    letter-spacing: .15rem;
+}
+.rules2::selection
+{
+    background: none;
+}
+.rules2>:first-child
+{
+    transform: scale(1.5);
+}
+.addOffer
+{
+    width:100%;
+    font-size: 3rem;
+    margin:3rem 0;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    padding: .5rem;
+    background:orange;
+    color: black;
+    border:.4rem solid black;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+.addOffer:hover
+{
+    background:rgb(254, 182, 47);
+    
+}
+.delete
+{
+    position: absolute;
+    top:0;
+    right: 0;
+    width:4rem;
+    height: 4rem;
+    color: black;
+    cursor: pointer;
+}
+.delete:hover
+{
+    color: red;
+}
+.errorArea
+{
+    width:100%;
+    text-align: start;
+    color: red;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.errorArea2
+{
+    width:100%;
+    text-align: start;
+    color: red;
+    font-weight: 700;
+    font-size: 1.2rem;
+    position: absolute;
+    top:100%;
+    left: 0;
+    z-index: 9;
+}
+.errorArea3
+{
+    text-align: center;
+}
+.dataError
+{
+    width:100%;
+    text-align: center;
+    color: red;
+    font-size: 1.8rem;
+    font-weight: 700;
+    
+}
+.sendingCon
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+.sendingCon>div
+{
+    background-color: white;
+    padding: 4rem;
+    border:.5rem solid orange;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sendingCon>div>h1
+{
+    text-align: center;
+    color: black;
+    font-size: 2.5rem;
+}
+.con
+{
+    width:100%;
+margin-top:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+}
+.con>h1
+{
+    font-size: 3rem;
+    color: orange;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.con>button
+{
+    width:80%;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(194, 194, 194);
+    border:.4rem solid black;
+    border-radius: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.sended
+{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: red;
+}
+.con>button:hover
+{
+    background-color: orange;
+}
+@media(max-width:950px)
+{
+    .con>h1
+    {
+        font-size: 4.5rem;
+    }
+    .sended
+    {
+        font-size: 1.5rem;
+    }
+    .con>button
+    {
+        width: 100%;
+        font-size: 3rem;
+    }
+    .errorArea
+    {
+        font-size: 2rem;
+    }
+    .dataError
+    {
+        font-size: 3.2rem;
+        margin-top: 1rem;
+    }
+    .rules>div
+    {
+        
+        font-size: 2rem;
+        gap:1.3rem;
+        
+    }
+    .errorArea2
+    {
+        font-size: 2rem;
+    }
+    .container
+    {
+        width:100%;
+        margin: 0;
+    }
+    .container>h2
+    {
+        font-size: 5.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .titlePlace>h2
+    {
+        font-size: 3rem;
+        margin-left: 5%;
+    }
+    .title
+    {
+        font-size: 2.5rem;
+        width:100%;
+        margin-left: 0;
+        border:.4rem solid black;
+    }
+    .title:focus
+    {
+        border:.4rem solid orange;
+    }
+    .car>h1
+    {
+        font-size: 4rem;
+    }
+    .car>h2
+    {
+        font-size: 2.5rem;
+        margin-left: 2rem;
+        margin-top:4rem;
+    }
+    .selectLabel
+    {
+        width:100%;
+        margin-left: 0;
+    }
+    .selectBrand
+    {
+        width:100%;
+        margin-left: 0;
+        font-size: 2.5rem;
+        border:.4rem solid black;
+    }
+    .selectBrand:focus
+    {
+        border:.4rem solid orange;
+    }
+    .carModel
+    {
+        width:100%;
+        margin-left: 0;
+        font-size: 2.5rem;
+        border:.4rem solid black;
+    }
+    .carModel:focus
+    {
+        border:.4rem solid orange;
+    }
+    .line
+    {
+        height: .4rem;
+        margin: 4rem 0;
+    }
+    .specification
+    {
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .specification>h2
+    {
+        font-size: 4rem;
+    }
+    .inputCon>h2
+    {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        margin-top:2rem;
+        padding-left: 2rem;
+    }
+    .specificationInput
+    {
+        width:100%;
+        margin-left: 0;
+        font-size: 2.5rem;
+        padding: .5rem .8rem;
+        border:.4rem solid black;
+    }
+    .specificationInput:focus
+    {
+        border:.4rem solid orange;
+    }
+    .capacity
+    {
+        width: 100%;
+        margin-left: 0;
+        font-size: 2.5rem;
+        padding: .5rem .8rem;
+       
+        border:.4rem solid black;
+    }
+    .capacity:focus
+    {
+        border:.4rem solid orange;
+    }
+    .capacityCon>input
+    {
+        padding-right:11rem;
+    }
+    .cm
+    {
+        font-size: 2rem;
+        top:1.2rem;
+    }
+    .selectEngine
+    {
+        width: 100%;
+        margin-left: 0;
+        font-size: 2.5rem;
+        border:.4rem solid black;
+    }
+    .selectEngine:focus
+    {
+        border:.4rem solid orange;
+    }
+    .description>h2
+    {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    .textArea
+    {
+        font-size: 2.5rem;
+        min-height: 20rem;
+        border:.4rem solid black;
+    }
+    .textArea:focus
+    {
+        border:.4rem solid orange
+    }
+    .photo
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .photo>h2
+    {
+        font-size: 4rem;
+    }
+    .price>h2
+    {
+        font-size: 5rem;
+    }
+    .priceCon
+    {
+        width:60%;
+        
+    }
+    .priceCon>input
+    {
+        font-size: 3rem;
+        border:.4rem solid black;
+    }
+    .priceCon>input:focus
+    {
+        border:.4rem solid orange;
+    }
+    .currency
+    {
+        font-size: 3rem;
+    }
+    .rules
+    {
+        font-size: 2.5rem;
+       padding: 0;
+       gap:1.5rem;
+       margin: 1rem 0;
+    }
+    .rules>:first-child>:first-child
+    {
+        transform: scale(2);
+    }
+    .addOffer
+    {
+        font-size: 5rem;
+    }
+    .rules2
+    {
+        font-size: 4rem;
+        padding: 0;
+        gap:3rem;
+        margin: 1rem 0 2rem;
+    }
+    .rules2>:first-child
+    {
+        transform: scale(3.5);
+    }
+    .imgContainer
+    {
+        max-width:50vw;
+        max-height: 50vw;
+    }
+    .addPhoto
+    {
+        width:20vw;
+        height: 20vw;
+        border:.5rem solid gray;
+    }
+    .addPhoto:hover
+    {
+        border:.5rem solid orange;
+    }
+    .list
+    {
+        max-height: 30rem;
+        font-size: 2rem;
+        border:.5rem solid orange;
+    }
+}

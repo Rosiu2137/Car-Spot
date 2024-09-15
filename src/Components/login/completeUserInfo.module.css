@@ -1,0 +1,234 @@
+.container
+{
+    width:80%;
+    margin-left: 10%;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 6rem;
+}
+.container>h1
+{
+    font-size: 4rem;
+    color: orange;
+    width:100%;
+    text-align: center;
+    margin:1rem 0;
+}
+.inputCon
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:.1rem;
+    margin: 2rem 0;
+}
+.inputCon>h2
+{
+    font-size: 1.5rem;
+    padding-left: 3rem;
+}
+.inputCon>input
+{
+    width:100%;
+    font-size:1.6rem;
+    border: 0;
+    padding: .3rem 1rem;
+    border-bottom:.3rem solid black;
+    
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+}
+.inputCon>input:focus
+{
+    border-bottom: .3rem solid orange;
+
+}
+.inputCon>input::-webkit-inner-spin-button
+{
+    display: none;
+}
+.mail
+{
+    border:.3rem solid grey !important;
+    border-radius: 1rem;
+    color:grey !important;
+    cursor: default !important;
+}
+.selectCon
+{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:.3rem;
+    margin: 2rem 0;
+    position: relative;
+}
+.selectCon>h2
+{
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    margin-bottom: .5rem;
+}
+.selectCon>select
+{
+    width:100%;
+    font-size:1.6rem;
+    padding: .4rem 1rem;
+    border:.3rem solid black;
+    border-radius: 1rem;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    margin-bottom: 3rem;
+}
+.selectCon>select:focus
+{
+    border: .3rem solid orange;
+}
+.arrow
+{
+    position: absolute;
+    right:.8rem;
+    top:3.5rem;
+    width:2rem;
+    height: 2rem;
+    rotate: 90deg;
+}
+.rulesCon
+{
+    width:100%;
+    display: flex;
+    gap:.5rem;
+    align-items: center;
+    font-size: 1.4rem;
+    margin:.6rem 0;
+    cursor: pointer;
+}
+.rulesCon::selection
+{
+    background: none;
+}
+.submit
+{
+    width:100%;
+    font-size: 2.5rem;
+    color: white;
+    background-color: orange;
+    outline: none;
+    border:.4rem solid black;
+    border-radius: 1.5rem;
+    padding: .5rem 0;
+    font-weight: 700;
+    margin-top: 2rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}   
+.submit:hover
+{
+    background-color: rgb(255, 182, 45);
+}
+.errorArea
+{
+    width: 100%;
+    color: red;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-left: .5rem;
+}
+.errorArea2
+{
+    font-size: 1rem;
+}
+.creating
+{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.creating>div
+{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    font-size: 2rem;
+    padding: 2rem 4rem;
+    align-items: center;
+    background-color: white;
+    border:.4rem solid orange;
+    border-radius: 2rem;
+    font-weight: 700;
+}
+.mainError
+{
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top:.5rem;
+}
+@media (max-width:950px)
+{
+    .container
+    {
+        width:100%;
+        margin-left: 0;
+        padding: 1rem 3rem;
+    }
+    .container>h1
+    {
+        font-size: 5rem;
+    }
+    .inputCon>h2
+    {
+        font-size: 2rem;
+    }
+    .inputCon>input
+    {
+        font-size: 2.5rem;
+    }
+    .errorArea
+    {
+        font-size: 1.8rem;
+    }
+    .selectCon>h2
+    {
+        font-size: 2rem;
+    }
+    .selectCon>select
+    {
+        font-size: 2rem;
+    }
+    .arrow
+    {
+        top:4rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    .rulesCon
+    {
+        font-size: 2rem;
+        gap:1rem;
+    }
+    .rulesCon>:first-child
+    {
+        transform: scale(1.5);
+    }
+    .submit
+    {
+        font-size: 4rem;
+      
+    }
+}

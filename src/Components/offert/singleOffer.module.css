@@ -1,0 +1,865 @@
+.container
+{
+    min-height: 100vh;
+    background-color: white;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.imgArea
+{
+  
+    
+   
+    display: flex;
+    flex-direction: column;
+   
+}
+.innerImg
+{
+
+
+    position: relative;
+}
+.hoverImgEffect
+{
+    transition: all .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    bottom: .25rem;
+    left:0;
+    right: 0;
+    background: none;
+    border-radius: .8rem;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+}
+
+.innerImgArea
+{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 1rem;
+}
+.innerImg>img
+{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: .8rem;
+}
+.innerImg>img::selection
+{
+    background: none;
+}
+.shortDescription
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    position: relative;
+    
+    padding: 1rem;
+}
+.lineBreak
+{
+    width:.3%;
+    height: 34rem;
+    margin-top: .5rem;
+    background-color: rgb(171, 171, 171);
+    border-radius: 10px;
+}
+.shortDescription>h1
+{
+    width:100%;
+    
+    color:orange;
+    padding-right: 2.3rem;
+    
+    overflow: hidden;
+    text-align: center;
+}
+.item
+{
+    width:100%;
+    display: flex;
+    gap:.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 2.4rem;
+    font-size: 1.8rem;
+    margin: .5rem 0;
+    overflow: hidden;
+    padding-left: .5rem;
+    
+}
+.item>span
+{
+    font-weight: bold;
+    padding-left: .4rem;
+}
+.price
+{
+    width:100%;
+    
+    display: flex;
+    justify-content: flex-end;
+    
+    font-weight: 700;
+    color:orange;
+    letter-spacing: .1rem;
+}
+.phoneNumber
+{
+    
+    color: black;
+    margin-top: .5rem;
+    
+    
+}
+.phoneNumber>span
+{
+    display: flex;
+    align-items: center;
+    gap:.4rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.phoneNumber>span:hover
+{
+    color:red;
+}
+.horizontalBreak
+{
+    width:100%;
+    
+    height: .3rem;
+    margin:.6rem 0;
+    border-radius: 10px;
+    background-color: rgb(171, 171, 171);
+}
+
+.bottomMenu
+{
+    width: 100%;
+    height: 25%;
+  
+    padding: 0 .3rem;
+    display: flex;
+    gap:.4rem;
+    justify-content: center;
+    align-items: center;
+}
+.imagesContainer
+{
+    max-width:82%;
+  
+    display: flex;
+    gap: .2rem .4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 100%;
+    overflow: hidden;
+    
+}
+.nextPage
+{
+    width: 9%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nextPage:hover
+{
+    color: red;
+}
+.rotated
+{
+    rotate: 180deg;
+}
+.BottomMenuItem
+{
+    max-width:5rem;
+    max-height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.8;
+    
+}
+.BottomMenuItem>img
+{
+    width:100%;
+    height: 100%;
+  
+    
+}
+.BottomMenuItem>img::selection
+{
+    background: none;
+}
+.BottomMenuItem:hover
+{
+    opacity: 1;
+   
+}
+.maxPhoto
+{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(30px);
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    gap:5vh;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 1rem;
+
+}
+.goBack
+{
+    position: fixed;
+    top:2rem;
+    left:2rem;
+    width:4rem;
+    height: 4rem;
+    
+}
+.fullImgContainer
+{
+    max-height: 80vh;
+    max-width:78vw;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+.fullImgContainer>img
+{
+    width:100%;
+    height: 100%;
+   cursor: default;
+
+}
+.fullImgContainer>img::selection
+{
+    background: none;
+}
+.backImg
+{
+    width:7rem;
+    height: 7rem;
+    position:fixed;
+    top:50%;
+    left:2rem;
+    translate: 0 -50%;
+    cursor: pointer;
+    rotate: 180deg;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backImg:hover
+{
+    color: orange;
+}
+.frontImg
+{
+    width:7rem;
+    height: 7rem;
+    position:fixed;
+    top:50%;
+    right:2rem;
+    translate: 0 -50%;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.frontImg:hover
+{
+    color: orange;
+}
+.bottomMenu2
+{
+    width:100%;
+    display: flex;
+    gap:.5rem;
+    padding: 0 .5rem;
+
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BottomMenuItem2
+{
+    padding: .3rem;
+
+    border-radius: .5rem;
+    
+    opacity: 0.6;
+    cursor: pointer;
+}
+.BottomMenuItem2:hover
+{
+    opacity: 1;
+}
+.BottomMenuItem2>img
+{
+    max-width:12rem;
+    max-height: 10rem;
+    border-radius: .5rem;
+}
+.BottomMenuItem2>img::selection
+{
+    background: none;
+}
+.longDescription
+{
+    width:100%;
+    
+    display: flex;
+    flex-direction: column;
+}
+.longDescription>h1
+{
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    padding: .5rem .5rem;
+    color:orange;
+    margin-top: 1rem;
+   
+}
+.description
+{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    min-height: 10rem;
+    font-size: 1.2rem;
+    border:.5rem solid rgb(171, 171, 171);
+    background-color: rgb(233, 233, 233);
+}
+.grid
+{
+    width:100%;
+    gap:1rem;
+
+    display: grid;
+    justify-items: center;
+    padding: 1rem .5rem;
+}
+.gridOption
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:.8rem;
+    font-size: 1.8rem;
+    
+}
+.gridValue
+{
+    font-weight: 700;
+}
+.secondPrice
+{
+    width: 100%;
+
+    font-size: 4rem;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.innerPrice
+{
+    color: orange;
+ 
+}
+.innerPhone
+{
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+.innerPhone:hover
+{
+    color: red;
+}
+.phoneContainer
+{
+    height: 4rem;
+    width:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.info
+{
+    display: flex;
+   
+    margin-bottom: 1rem;
+}
+.infoColumn
+{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoColumn>h1
+{
+    width:100%;
+    font-weight: 700;
+    font-size: 2.3rem;
+    text-align: center;
+    margin:1rem 0;
+}
+.infoItem
+{
+    width:100%;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:.4rem;
+    padding: .6rem 2rem;
+}
+.specialColumn
+{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    padding: 0;
+    overflow:hidden;
+}
+.userOffers
+{
+    width: 100%;
+    background-color: orange;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    padding: .5rem .3rem;
+    border-radius: .6rem;
+    border:.3rem solid black;
+    margin-bottom: 1rem;
+}
+.suggestedOffers
+{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem 3%;
+    padding: 1.3rem 2%;
+    justify-content: center;
+    
+}
+.suggestedOffersItem
+{
+    color: black;
+    text-decoration: none;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: .8rem;
+  
+   
+    background-color: rgb(226, 226, 226);
+    transition: all .3s ease;
+    
+}
+.suggestedOffersItem:hover
+{
+    transform: scale(1.05);
+    border: .3rem solid orange;
+   
+}
+.suggestedOffersItem>img
+{
+    max-width: 100%;
+
+    border-radius: .8rem;
+}
+.suggestedOffersItem>h1
+{
+    color: orange;
+    text-align: center;
+    
+    margin:.5rem 0;
+    font-weight: 700;
+}
+.suggestedOffersPrice
+{
+   
+    font-weight: 700;
+}
+
+.heart
+{
+    position: absolute;
+    top:2rem;
+    right:0;
+    width:2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:grey;
+    cursor: pointer;
+}
+.message
+{
+    background-color: rgb(182, 182, 182);
+    position: absolute;
+    top:4rem;
+    max-width: 12rem;
+    right: -0.5rem;
+    font-size: 1rem;
+    color: red;
+    font-weight: 700;
+    text-align: center;
+    padding: .3rem;
+    z-index: 9;
+    opacity: 1;
+    transition: all .5s linear;
+    border-radius: .5rem;
+}
+.heart:hover
+{
+    color: black;
+}
+.mainError
+{
+    width:80%;
+    margin-left: 10%;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:4rem;
+}
+.fixedBar
+{
+    position: fixed;
+    top:0;
+    
+    padding: 0rem 4rem;
+    left:0;
+    right: 0;
+    translate: 0 0%;
+    transition: all .6s ease;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+    border-bottom: .25rem solid rgb(118, 118, 118);;
+    z-index: 9;
+   align-items: center;
+    opacity: 0;
+}
+.fixedBar>:nth-child(2)
+{
+    color: orange;
+}
+@media(min-width:951px)
+{
+    .container
+    {
+        width:90%;
+        margin-left:5%;
+    }
+    .imgArea
+    {
+        width: 49.8%;
+        height: 35rem;
+    }
+    .shortDescription
+    {
+        width:49.8%;
+        height: 35rem;
+    }
+    .lineBreak
+    {
+        display: block;
+    }
+    .shortDescription>h1
+    {
+        font-size: 3rem;
+        max-height: 8rem;
+    }
+    .price
+    {
+        font-size: 4.2rem;
+    }
+    .phoneNumber
+    {
+        font-size: 1.8rem;
+    }
+    .grid
+    {
+        grid-template-columns: 33% 33% 33%;
+    }
+    .infoItem
+    {
+        font-size: 2rem;
+    }
+    .col1
+    {
+        width: 40%;
+    }
+    .col2
+    {
+        width: 60%;
+    }
+    .specialColumn
+    {
+        font-size: 2.8rem;
+    }
+    .suggestedOffersItem
+    {
+        width: 17%;
+        border:.3rem solid rgb(142, 142, 142);
+        border-radius: .7rem;
+    }
+    .suggestedOffersItem>img
+    {
+        max-height: 8rem;
+    }
+    .suggestedOffersItem>h1
+    {
+        font-size: 1.6rem;
+    }
+    .suggestedOffersPrice
+    {
+        font-size: 1.5rem;
+    }
+    
+}
+@media(max-width:950px)
+{
+    .container
+    {
+        width:100%;
+        margin-left: 0%;
+    }
+    .imgArea
+    {
+        max-width: 100%;
+        max-height: 60rem;
+    }
+    .innerImgArea
+    {
+       width:100%;
+      
+    }
+    .shortDescription
+    {
+        width:100%;
+        height: auto;
+        padding-bottom: 0;
+    }
+    .lineBreak
+    {
+        display: none;
+    }
+    .backImg
+    {
+        width:5rem;
+        height: 5rem;
+        left:1rem;
+    }
+    .frontImg
+    {
+        width:5rem;
+        height: 5rem;
+        right:1rem;
+    }
+    .shortDescription>h1
+    {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+        padding-right: 4rem;
+        
+    }
+    .price
+    {
+        font-size: 7rem;
+    }
+    .phoneNumber
+    {
+        margin-top:3rem;
+        font-size: 4rem;
+    }
+    .grid
+    {
+        grid-template-columns: 100%;
+    }
+  
+    .specialColumn
+    {
+        font-size: 2rem;
+    }
+    .suggestedOffersItem
+    {
+        width:45%;
+        border:.5rem solid rgb(142, 142, 142);
+        border-radius: 1.3rem;
+    }
+    .suggestedOffersItem:hover
+    {
+        border:.5rem solid orange;
+    }
+    .suggestedOffersItem>img
+    {
+        max-height: 12rem;
+    }
+    .suggestedOffersItem>h1
+    {
+        font-size: 2rem;
+    }
+    .suggestedOffersPrice
+    {
+        font-size: 1.9rem;
+    }
+    .bottomMenu
+    {
+        margin:2rem 0;
+    }
+    .BottomMenuItem
+    {
+        max-height: 10rem;
+        max-width: 14rem;
+    }
+    .heart
+    {
+    
+        translate: -100% 100%;
+        scale: 2;
+    }
+    .item
+    {
+        font-size: 3rem;
+        max-height: 100%;
+        margin: .8rem 0;
+    
+    }
+    .item>:first-child
+    {
+        scale: 2;
+        translate: 50%;
+        margin-right: 2rem;
+    }
+    .horizontalBreak
+    {
+        height: .5rem;
+        margin:2rem 0;
+    }
+    .longDescription>h1
+    {
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+    }
+    .description
+    {
+        font-size: 2rem;
+        background-color: white;
+        border:0;
+    }
+    .gridOption
+    {
+        font-size: 3rem;
+        margin: .3rem 0;;
+       text-align: center;
+    }
+    .secondPrice
+    {
+        font-size: 5rem;
+    }
+    .infoColumn>h1
+    {
+        margin:2rem 0;
+        font-size: 4rem;
+    }
+   .info
+   {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 0;
+
+   }
+   .infoItem
+   {
+    font-size: 3rem;
+ 
+    width:100%;
+    margin: .5rem 0;
+    display: flex;
+    overflow: visible;
+   }
+   .infoItem>:first-child
+   {
+    scale: 2;
+    
+    translate: -50%;
+   }
+   .userOffers
+   {
+    margin-top:2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    border:.5rem solid black;
+    border-radius: 1.5rem;
+   }
+   .nextPage:hover
+   {
+    color: black;
+   }
+   .message
+   {
+    font-size: 3rem;
+    max-width: 22rem;
+   }
+}

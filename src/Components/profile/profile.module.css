@@ -1,0 +1,520 @@
+.container
+{
+    width:90%;
+    margin-left: 5%;
+    background-color: white;
+    min-height: 100vh;
+    padding: 1rem 1.5rem;
+
+}
+.container>h1
+{
+    width:100%;
+    text-align: center;
+    font-size: 3rem;
+    padding: .0 0 1rem 0;
+    color: orange;
+}
+.info
+{
+    width:100%;
+    padding-bottom: 2rem;
+
+    display: flex;
+
+}
+.leftDiv
+{
+    width: 50%;
+    padding-right: 1rem;
+    
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+    align-items: center;
+
+}
+.inputContainer
+{
+    width:85%;
+    margin:.5rem 0;
+    padding-top: 1.8rem;
+    position: relative;
+}
+.selectContainer
+{
+    width:85%;
+  
+    padding: 0 .3rem;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    margin-top:1.6rem;
+}
+.h2
+{
+    font-size: 1.4rem;
+}
+.input
+{
+    width:100%;
+    font-size: 2rem;
+    outline: none;
+    background:none;
+    border:0;
+    font-weight: 700;
+    padding: .1rem .6rem;
+    cursor: pointer;
+    border-bottom: .3rem solid black;
+}
+.input:focus
+{
+    border-bottom: .3rem solid orange;
+}
+.inputInfo
+{
+    position: absolute;
+    top:.2rem;
+    left:2rem;
+    
+    font-size: 1.4rem;
+
+}
+.photoDes
+{
+    width:100%;
+    display: flex;
+    gap:1.5rem;
+    align-items: center;
+
+    justify-content: center;
+}
+.photoDes>h2
+{
+    font-size: 4rem;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+  
+    max-width: 75%;
+    
+}
+.imgContainer
+{
+    width: 11vw;
+    height: 11vw;
+    max-width: 25%;
+    background-color: rgb(255, 255, 255);
+    padding: .5rem;
+    border:.4rem solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.imgContainer:hover >.imgHover
+{
+    opacity: 1;
+}
+.imgContainer>img
+{
+   max-width:100%;
+   max-height: 100%;
+   scale: 1.2;
+}
+.imgHover
+{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    background:rgba(0, 0, 0, 0.5);
+    transition: all .3s ease;
+    display: flex;
+    flex-direction: column;
+    color: red;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+.rightDiv
+{
+    width:50%;
+    height: 100%;
+  
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1rem;
+    
+}
+
+.disabled
+{
+    color:grey;
+    border-bottom: .3rem solid grey;
+    cursor:default;
+}
+.select
+{
+    font-size: 1.3rem;
+    padding: .3rem .5rem;
+    border:.3rem solid black;
+    outline: none;
+    border-radius: .6rem;
+    font-weight: 700;
+    background-color: rgb(199, 199, 199);
+    cursor: pointer;
+}
+.select:focus
+{
+    border:.3rem solid orange;
+}
+.loading
+{
+
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:3rem;
+}
+.menu
+{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.menuOption
+{
+    width:24%;
+    font-size: 2rem;
+    padding: .3rem .5rem;
+    outline: none;
+    border:.3rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    text-decoration: none;
+    border-radius: .7rem;
+    background-color: rgb(222, 222, 222);
+    transition: all .3s ease;
+    gap:.5rem;
+    cursor: pointer;
+}
+.menuOption:hover
+{
+     border:.3rem solid orange;
+     background-color: orange;
+     transform: scale(1.05);
+}
+.errorArea
+{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.sendingCon
+{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+.sending>h2
+{
+    font-size: 2rem;
+    color: orange;
+}
+.sending
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 3rem;
+    border:.3rem solid black;
+    background-color: white;
+    flex-direction: column;
+    gap:.5rem;
+
+}
+.serverError
+{
+    width:100%;
+    text-align: center;
+    color: red;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.file
+{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+.bottomBtn
+{
+    width:100%;
+    display: flex;
+    gap:2%;
+}
+.deleteAccount
+{
+    width:49%;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.deleteAccount>button
+{
+    width:100%;
+    color:black;
+    background-color: rgb(205, 205, 205);
+    padding: 1rem 2rem;
+    border:.3rem solid black;
+    border-radius:1rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+}
+.scale>button>:first-child
+{
+    transform: scale(2);
+}
+.deleteAccount>button:hover
+{
+    background-color: red;
+    color:white;
+}
+.deleteInfo
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deleteInfo>div
+{
+    padding: 4rem;
+    background-color: white;
+    border: .5rem solid red;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.deleteInfo>div>h2
+{
+    font-size: 4rem;
+    color: orange;
+    font-size: 700;
+}
+.deleteInfo>div>div
+{
+    display: flex;
+    justify-content: center;
+    gap:9rem;
+    padding: 2rem 1rem;
+}
+.deleteInfo>div>div>button
+{
+    font-size: 4rem;
+    color: white;
+    font-weight: 700;
+    padding: 1rem 4rem;
+    border: .4rem solid black;
+    border-radius: 1rem;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.deleteInfo>div>div>button:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 2rem .5rem black;
+}
+.yes
+{
+    background-color: red;
+}
+.no
+{
+    background-color: green;
+}
+.deletingCon
+{
+    position: fixed;
+    z-index: 20;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deletingCon>div
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    color: black;
+    background-color: white;
+    font-weight: 700;
+    padding: 4rem 5rem;
+    align-items: center;
+    border:.6rem solid orange;
+    border-radius: 2rem;
+    gap:2rem;
+}
+@media(max-width:950px)
+{
+    .container
+    {
+        width:100%;
+        margin-left: 0;
+    }
+    .leftDiv
+    {
+        width:100%;
+        padding-right: 0rem;
+    }
+    .info
+    {
+        flex-direction: column;
+    }
+    .rightDiv
+    {
+        width:100%;
+        padding-left: 0rem;
+    }
+    .container>h1
+    {
+        font-size: 6rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    .photoDes>h2
+    {
+        font-size: 5rem;
+    }
+    .imgContainer
+    {
+        width:20vw;
+        height: 20vw;
+        
+    }
+    .photoDes
+    {
+        margin-bottom: 4rem;
+    }
+    .inputContainer
+    {
+        width:90%;
+        margin-bottom: 3rem;
+    }
+    .input
+    {
+        font-size: 3.5rem;
+        border-radius: 0;
+        border-bottom: .5rem solid black;
+    }
+    .input:focus
+    {
+        border-bottom: .5rem solid orange;
+    }
+    .inputInfo
+    {
+        font-size: 2.5rem;
+        top:-1rem;
+    }
+    .disabled
+    {
+        color: grey;
+        border-bottom: .5rem solid grey;
+    }
+    .selectContainer
+    {
+        margin-top:0;
+        width: 90%;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .h2
+    {
+        font-size: 2.5rem;
+    }
+    .select
+    {
+        font-size: 2.5rem;
+        width:90%;
+        margin-left: 5%;
+        border:.5rem solid black;
+        border-radius: 1.3rem;
+        color: black;
+    }
+    .select:focus
+    {
+        border:.5rem solid orange;
+      
+    }
+    .menu
+    {
+        flex-direction: column-reverse;
+        gap:2rem;
+    }
+    .menuOption
+    {
+        width:95%;
+        margin:2rem 0;
+        margin-left:2.5%;
+        font-size: 3.5rem;
+    }
+    .menuOption>:first-child
+    {
+        scale: 2;
+        translate:  -100%;
+    }
+}

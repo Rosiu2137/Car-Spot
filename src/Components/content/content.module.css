@@ -1,0 +1,265 @@
+.content
+{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding:.8rem 1rem;
+    gap:1.3rem;
+    min-height: 100vh;
+}
+.contentSearch
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding:.8rem 1rem;
+    gap:1.3rem;
+    min-height: 100vh;
+   
+}
+.hugeContent
+{
+    display: flex;
+    justify-content: center;
+
+    
+}
+.topMenu
+{
+    width:100%;
+   
+    
+    
+    display: flex;
+    align-items: center;
+    gap:.6rem;
+}
+.found
+{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+    font-weight: 700;
+    text-align: center;
+}
+.sort
+{
+    
+
+    display: flex;
+    gap:.4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+}
+.select
+{
+    
+    outline: none;
+    cursor: pointer;
+    
+    border-radius: .4rem;
+    color: black;
+    padding: .05rem;
+    background-color: rgb(210, 210, 210);
+}
+.leftLine
+{
+    width:8%;
+    height: .25rem;
+    background-color: orange;
+    border-radius: 10px;
+}
+.centerLine
+{
+    width:35%;
+    height: .25rem;
+    background-color: orange;
+    border-radius: 10px;
+}
+.rightLine
+{
+    width:10%;
+    height: .25rem;
+    background-color: orange;
+    border-radius: 10px;
+}
+.filteredOffersNotFound
+{
+    padding-top: 5rem;
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.filters
+{
+   cursor: pointer;
+    padding: .2rem 1rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(213, 213, 213);
+    border-radius: .7rem;
+    border: .3rem solid orange;
+}
+@media(min-width:951px)
+{
+    .content
+    {
+        width:70%;
+        margin-left: 15%;
+    }
+    .hugeContent
+    {
+        width:90vw;
+        margin-left: 2vw;
+    }
+    .contentSearch
+    {
+        min-width: 70rem;
+    }
+    .topMenu
+    {
+        padding: 1rem 0 .5rem 0;
+    }
+    .leftLine
+    {
+        display: block;
+    }
+    .rightLine
+    {
+        display: block;
+    }
+    .centerLine
+    {
+        display: block;
+    }
+    .found
+    {
+        width: 18%;
+        font-size: 1.3rem;
+    }
+    .sort
+    {
+        width:27%;
+        font-size: 1rem;
+    }
+    .select
+    {
+        font-size: .9rem;
+        border:.2rem solid orange;
+    }
+    .verticalLine
+    {
+        display: none;
+    }
+    .filters
+    {
+        display: none;
+    }
+    
+}
+@media(max-width:950px)
+{
+    .content
+    {
+        width:100%;
+        margin-left: 0%;
+    }
+    .hugeContent
+    {
+        width:100%;
+       
+    }
+    .contentSearch
+    {
+        width:100%;
+    }
+    .topMenu
+    {
+        height: 10vw;
+        
+        padding: .8rem .8rem 1.4rem .8rem;
+        border-bottom: .3rem solid rgb(161, 161, 161);
+        justify-content: space-between;
+    }
+    .filters
+    {
+        font-size: 2rem;
+        padding: .3rem 1.2rem;
+        border:.4rem solid orange;
+    }
+    .select
+    {
+        font-size: 1.7rem;
+        border-radius: .8rem;
+        padding: .2rem .6rem;
+        border:.4rem solid orange;
+    }
+    .verticalLine
+    {
+        width:.35rem;
+        height: 120%;
+        background-color: rgb(161, 161, 161);
+        border-radius: 10px;
+    }
+    .leftLine
+    {
+        display: none;
+    }
+    .rightLine
+    {
+        display: none;
+    }
+    .centerLine
+    {
+        display: none;
+    }
+    .found
+    {
+       
+        font-size: 1.8rem;
+    }
+    .sort
+    {
+       
+        font-size: 1.7rem;
+    }
+    
+    
+    
+    .filtersResponsive
+    {
+        
+        background-color: rgba(0,0,0,0.5);
+        backdrop-filter:blur(10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        position: fixed;
+        top:0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+    .filters
+    {
+        display: block;
+    }
+    
+}

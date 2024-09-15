@@ -1,0 +1,585 @@
+.background
+{
+    width:100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+.image
+{
+    width: 100%;
+    position: relative;
+    height: 40vw;
+   
+}
+.form
+{
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    max-width:50%;
+    top:2rem;
+    left:2rem;
+    padding:1.8rem 2.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 24.5% 24.5% 2% 24.5% 24.5%;
+    gap:1.5rem .5rem;
+    justify-content: center;
+    border:.4rem solid orange;
+}
+.form>h1
+{
+    color: orange;
+    font-size: 2.4rem;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.input
+{
+    font-size: 1.5rem;
+    padding: .3rem .5rem;
+    border:.3rem solid grey;
+    border-radius: .6rem;
+    outline: none;
+    cursor: pointer;
+}
+.input::-webkit-inner-spin-button
+{
+    display: none;
+}
+.input:focus
+{
+    border:.3rem solid orange;
+}
+
+
+.brand
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+}
+.brandInput
+{
+    width:100%;
+    caret-color: white;
+}
+.arrow
+{
+    position: absolute;
+    right: .5rem;
+    top:50%;
+    translate: 0 -50%;
+    cursor: pointer;
+    width:2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 90deg;
+    color: gray;
+    transition: all .4s ease;
+}
+.brandList
+{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top:100%;
+    background-color: rgb(227, 227, 227);
+    border:.25rem solid grey;
+    border-radius: .5rem;
+    z-index: 2;
+    opacity: 0;
+    transition: all .6s ease !important;
+    max-height: 15rem;
+    overflow: scroll;
+}
+.brandList::-webkit-scrollbar
+{
+    height: 0;
+    width:.5rem;
+}
+.brandList::-webkit-scrollbar-track
+{
+    background: rgb(227, 227, 227);
+
+}
+.brandList::-webkit-scrollbar-thumb
+{
+    background: rgb(176, 176, 176);
+}
+.brandList>div
+{
+    padding: .5rem .7rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.brandList>div::selection
+{
+    background: none;
+}
+.brandList>div:hover
+{
+    background-color: rgb(200, 200, 200);
+}
+.model
+{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+.verticalBreak
+{
+    background-color: grey;
+    border-radius: 10px;
+    height: 100%;
+    width:.3rem;
+    justify-self: center;
+}
+.btn
+{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: .3rem;;
+    background-color: orange;
+    border:.3rem solid black;
+    border-radius: .6rem;
+    color: black;
+    transition: all .2s ease;
+    grid-column: 1/6;
+}
+.btn:hover
+{
+    cursor: pointer;
+    background-color: rgb(254, 189, 68);
+
+}
+.img
+{
+
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-size: cover !important;
+    z-index: 2;
+    transition: all 2s ease !important;
+}
+.container
+{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap:2rem 2%;
+    width:90%;
+    
+
+    justify-content: center;
+    padding: 2rem 0;
+    padding-bottom: 4rem;
+}
+.container>h1
+{
+    grid-column: 1/3;
+    width:100%;
+    text-align: center;
+    font-size: 3.5rem;
+    color: orange;
+    margin:2rem 0 1rem 0;
+}
+.loadingContainer
+{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    color: orange;
+    font-weight: 700;
+    gap:1rem;
+    padding: 3rem 0;
+}
+.errorArea
+{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+    padding: 2rem 0;
+}
+.errorArea>:first-child
+{
+    scale: 2;
+}
+.standPhoto
+{
+
+    background-size: cover !important;
+    position: sticky;
+    
+    height: 45rem;
+    width: 100%;
+
+}
+.backgroundNext
+{
+    width:100%;
+    background-color: white;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+.container2
+{
+    width:90%;
+
+
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    gap: 2rem 3%;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.photo
+{
+    height: 15rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo>img
+{
+    height: 100%;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.desc
+{
+
+    opacity: 0;
+    transition: all 3s ease;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    scale:0;
+}
+.primedOffers
+{
+    width:100%;
+    padding: 5rem 0;
+    grid-column: 1/4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+
+}
+.primedOffers>h2
+{
+    font-size: 3.5rem;
+    color: orange;
+    text-align: center;
+    width: 100%;
+    padding: 0rem 0 2rem;
+}
+.aboutUs
+{
+    grid-column: 1/4;
+    width:100%;
+    margin-bottom: 3rem;
+
+}
+.aboutUs>h2
+{
+    width:100%;
+    font-size: 5rem;
+    color: orange;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+}
+.aboutUs>div
+{
+    padding: 1.5rem 2.4rem;;
+    border-radius: 2rem;
+}
+.aboutUs>div>p
+{
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.leftTranslate
+{
+    translate: -80vw;
+    transition: all .5s ease;
+}
+.rightTranslate
+{
+    translate: 80vw;
+    transition: all .5s ease;
+}
+.otherPartners
+{
+    width: 100%;
+    grid-column: 1/4;
+    
+    justify-content: space-evenly;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+.otherPartners>h2
+{
+    width:100%;
+    text-align: center;
+    color: orange;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+.otherPartners>div
+{
+    width: 25%;
+    max-height: 8rem;
+    opacity: 0;
+    scale: 0;
+    display: flex;
+    justify-content: center;
+    transition: all 2s ease;
+}
+.otherPartners>div>img
+{
+    height: 100%;
+}
+.latestDiv
+{
+    grid-column: 1/3;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+.engineInput
+{
+    grid-column: 4/6;
+    position: relative;
+}
+@media(max-width:950px)
+{
+    .image
+    {
+        
+        height: 40vw;
+        
+    }
+    .form
+    {
+        position:absolute;
+        top: -100%;
+        translate:0 -45%;
+        border: 0;
+        left:1%;
+        right:1%;
+        width:98%;
+        max-width:100%;
+        
+    }
+
+    .img
+    {
+        height: 100%;
+     
+    }
+    .brand
+    {
+
+        grid-column: 1/6;
+    }
+    .model
+    {
+        grid-column: 1/6;
+    }
+    .engineInput
+    {
+        grid-column: 1/6;
+        grid-row: 4/5;
+    }
+    .priceInput
+    {
+        grid-column: 4/6;
+    }
+    .price2Input
+    {
+        grid-column: 1/3;
+    }
+    .verticalBreak
+    {
+        display: none;
+    }
+    .input
+    {
+        font-size: 2.5rem;
+        border:.4rem solid grey;
+        border-radius: 1rem;
+        padding: .5rem 1rem;
+    }
+    .input:focus
+    {
+        border:.4rem solid orange;
+    }
+    .form>h1
+    {
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    .btn
+    {
+        font-size: 3rem;
+        border:.5rem solid black;
+        border-radius: 1.5rem;
+
+    }
+    .arrow
+    {
+      
+        width:3rem;
+        height: 3rem;
+        right: 1rem;
+    }
+    .brandList
+    {
+        
+        border:.7rem solid grey;
+        border-radius: 2rem;
+        
+        width:100%;
+        max-height: 40vh;
+    }
+    .brandList::-webkit-scrollbar
+    {
+        width:0;
+        height: 0;;
+    }
+    .brandList>div
+    {
+        
+        font-size: 3rem;
+        padding:.8rem 2rem;
+    }
+    .container>h1
+    {
+        font-size: 5rem;
+        margin:1rem;
+    }
+    .latestDiv
+    {
+        flex-direction: column;
+    }
+    .responsiveCon
+    {
+        grid-column: 1/3;
+    }
+    .standPhoto
+    {
+        height: 50rem;
+    }
+    .photo
+    {
+        display: none;
+
+    }
+    .desc
+    {
+        display: none;
+    }
+    .photo2
+    {
+
+    
+        height: 20rem;
+        grid-column: 1/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .photo2>img
+    {
+        height: 100%;
+        opacity: 0;
+        transition: all .5s ease;
+    }
+    .desc2
+    {
+        grid-column: 1/4;
+
+        opacity: 0;
+        transition: all 3s ease;
+        font-size: 4rem;
+        font-weight: 700;
+        text-align: center;
+        scale:0;
+        padding:0 20%;
+        margin-bottom: 7rem;
+    }
+    .descLast
+    {
+        margin-bottom: 0;
+    }
+    .container2
+    {
+        width: 96%;
+    }
+    .primedOffers
+    {
+        gap:1.5rem;
+      
+        padding-bottom: 0;
+    }
+    .primedOffers>h2
+    {
+        font-size: 5rem;
+    }
+    .aboutUs>h2
+    {
+        font-size: 5rem;
+    }
+    .aboutUs>div
+    {
+        width:100%;
+        background-color: white;
+        border:0;
+        padding-bottom: 0;
+        
+      
+    }
+    .aboutUs>div>p
+    {
+        font-size: 2.2rem;
+        margin:3rem 0;
+    }
+}
+@media (min-width:951px)
+{
+    .desc2
+    {
+        display: none;
+    }
+    .photo2
+    {
+        display: none;
+    }
+    
+}
